@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
     res.send("Lords & Knights redirect service is running.");
 });
 
-// 404 route for unmatched paths
+// 404 handler
 app.use((req, res) => {
     res.status(404).send("404 Not Found");
 });
